@@ -1,11 +1,12 @@
-let Filter = require('./Filter');
+import Jimp from 'jimp';
+import Filter from './Filter';
 
 class Grayscale extends Filter {
     constructor() {
         super();
     }
     
-    apply(image) {
+    apply(image: Jimp) {
         let imageData = image.bitmap;
         
         for(let i=0; i<imageData.data.length; i+=4) {
@@ -23,4 +24,4 @@ class Grayscale extends Filter {
     }
 }
 
-module.exports = Grayscale;
+export default Grayscale;

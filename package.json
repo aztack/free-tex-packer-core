@@ -1,12 +1,16 @@
 {
-  "name": "free-tex-packer-core",
-  "displayName": "Free texture packer",
-  "version": "0.3.4",
+  "name": "@sar-creator/tex-packer",
+  "displayName": "SAR Creator Texture Packer",
+  "version": "0.3.5",
   "description": "Free texture packer core",
-  "url": "http://github.com/odrick/free-tex-packer-core",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {},
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc && yarn esbuild && yarn copy-templates",
+    "esbuild": "esbuild src/index.ts --bundle --tsconfig=tsconfig.json --platform=node --outfile=dist/index.js",
+    "copy-templates": "cp src/exporters/*.mst esm/exporters/ && cp src/exporters/*.mst dist/exporters/"
+  },
   "keywords": [
     "texture",
     "packer",
@@ -21,10 +25,13 @@
     "sprite",
     "2d"
   ],
-  "author": "Alexander Norinchak",
+  "authors": "Alexander Norinchak",
+  "contributors": [
+    "wangweihua@bytedance.com"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odrick/free-tex-packer-core"
+    "url": "git@code.byted.org:cg-lab/sar-creator-text-packer.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -35,6 +42,8 @@
     "tinify": "^1.5.0"
   },
   "devDependencies": {
-    "@types/node": "^13.1.0"
+    "@types/node": "^13.1.0",
+    "esbuild": "^0.18.11",
+    "typescript": "^5.1.6"
   }
 }

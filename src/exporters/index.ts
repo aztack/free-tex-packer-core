@@ -1,9 +1,17 @@
-let list = require("./list.json");
-let appInfo = require("../package.json");
-let mustache = require("mustache");
-let fs = require("fs");
-let path = require("path");
-let wax = require("@jvitela/mustache-wax");
+// @ts-nocheck
+import _list from "./list.json";
+import mustache from "mustache";
+import fs from "fs";
+import path from "path";
+import wax from "@jvitela/mustache-wax";
+
+const appInfo = {
+	displayName: 'SAR Creator Texture Packer',
+	version: '0.3.4',
+	url: ''
+}
+
+export const list = _list;
 
 wax(mustache);
 
@@ -44,7 +52,7 @@ mustache.Formatters = {
 	},
 };
 
-function getExporterByType(type) {
+export function getExporterByType(type) {
 	type = type.toLowerCase();
 
 	for (let item of list) {
@@ -142,7 +150,7 @@ function prepareData(data, options) {
 	return { rects: ret, config: opt };
 }
 
-function startExporter(exporter, data, options) {
+export function startExporter(exporter, data, options) {
 	let { rects, config } = prepareData(data, options);
 	let renderOptions = {
 		rects: rects,
@@ -156,7 +164,7 @@ function startExporter(exporter, data, options) {
 
 	let filePath;
 	if (exporter.predefined) {
-		filePath = path.join(__dirname, exporter.template);
+		filePath = path.join(__dirname, 'exporters', exporter.template);
 	} else {
 		filePath = exporter.template;
 	}
@@ -168,7 +176,3 @@ function startExporter(exporter, data, options) {
 function finishExporter(exporter, renderOptions) {
 	return mustache.render(exporter.content, renderOptions);
 }
-
-module.exports.getExporterByType = getExporterByType;
-module.exports.startExporter = startExporter;
-module.exports.list = list;

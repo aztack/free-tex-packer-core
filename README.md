@@ -1,14 +1,12 @@
-# free-tex-packer-core
-[![Stats](https://nodei.co/npm/free-tex-packer-core.png?downloads=true&stars=true)](https://www.npmjs.com/package/free-tex-packer-core) \
-Core Free texture packer module
+# @sar-creator/tex-packer
 
 # Install
    
-$ npm install free-tex-packer-core
+$ npm install @sar-creator/tex-packer
    
 # Basic usage
 ```js
-let texturePacker = require("free-tex-packer-core");
+let texturePacker = require("@sar-creator/tex-packer");
 
 let images = [];
 
@@ -31,7 +29,7 @@ texturePacker(images, null, (files, error) => {
 ## Asynchronous usage
 ### Async/await
 ```js
-const { packAsync } = require('free-tex-packer-core');
+const { packAsync } = require('@sar-creator/tex-packer');
 
 const images = [
     {path: "img1.png", contents: fs.readFileSync("./img1.png")},
@@ -69,7 +67,7 @@ function packImages() {
 Use packer options object
 
 ```js
-let texturePacker = require("free-tex-packer-core");
+let texturePacker = require("@sar-creator/tex-packer");
 
 let options = {
     textureName: "my-texture",
@@ -226,7 +224,7 @@ There are 3 objects passed to template:
 **Custom template usage example**
 
 ```js
-let texturePacker = require("free-tex-packer-core");
+let texturePacker = require("@sar-creator/tex-packer");
 
 let images = [];
 

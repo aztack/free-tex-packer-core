@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "es2020",
+    "outDir": "./esm",
+    "declaration": true,
+    "rootDir": "./src",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": false,
+    "isolatedModules": false,
+    "jsx": "react",
+    "lib": ["es6", "es2015", "es2016", "es2017", "es2019", "dom"],
+    "listFiles": false,
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
