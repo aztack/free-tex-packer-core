@@ -1,9 +1,11 @@
-import MaxRectsPacker, { MaxRectsPackerMethod } from "./MaxRectsPacker";
-import MaxRectsBin, { MaxRectsBinMethod } from "./MaxRectsBin";
-import OptimalPacker, { OptimalPackerMethod } from "./OptimalPacker";
-export { MaxRectsBinMethod } from "./MaxRectsBin";
-export { MaxRectsPackerMethod } from "./MaxRectsPacker";
-export { OptimalPackerMethod } from "./OptimalPacker";
+import { MaxRectsBinMethod, MaxRectsPackerMethod, OptimalPackerMethod } from "../types";
+import MaxRectsBin from "./MaxRectsBin";
+import MaxRectsPacker from "./MaxRectsPacker";
+import OptimalPacker from "./OptimalPacker";
+
+export { MaxRectsBinMethod } from "../types";
+export { MaxRectsPackerMethod } from "../types";
+export { OptimalPackerMethod } from "../types";
 
 export type PackerMethods = MaxRectsBinMethod | MaxRectsPackerMethod | OptimalPackerMethod;
 

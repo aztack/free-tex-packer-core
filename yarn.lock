@@ -112,121 +112,316 @@
   resolved "http://bnpm.byted.org/@esbuild/win32-x64/-/win32-x64-0.18.11.tgz#6526c7e1b40d5b9f0a222c6b767c22f6fb97aa57"
   integrity sha512-rQI4cjLHd2hGsM1LqgDI7oOCYbQ6IBOVsX9ejuRMSze0GqXUG2ekwiKkiBU1pRGSeCqFFHxTrcEydB2Hyoz9CA==
 
+"@jimp/bmp@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/bmp/-/bmp-0.22.8.tgz#19ce17bfef7f3d34a0dbe220d640f384d28178bc"
+  integrity sha512-JEMKgM1AEvvWfn9ZCHn62nK+QCE3Pb/ZhPdL3NF0ZgKNww6pqOmo6KqXzqY18JLB7c0epuTp4GPDPDhOh/ou1g==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    bmp-js "^0.1.0"
+
+"@jimp/core@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/core/-/core-0.22.8.tgz#6851513756e81887864d64d1786f212795076065"
+  integrity sha512-vkN28aFikzQieA6bGxN+qe20pseCAemCyUI0YmRkJIArlb6OujtAwWAKyokv2lylV56bq8EQGIz+Y30OXUnRqg==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    any-base "^1.1.0"
+    buffer "^5.2.0"
+    exif-parser "^0.1.12"
+    file-type "^16.5.4"
+    isomorphic-fetch "^3.0.0"
+    mkdirp "^2.1.3"
+    pixelmatch "^4.0.2"
+    tinycolor2 "^1.6.0"
+
+"@jimp/custom@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/custom/-/custom-0.22.8.tgz#098cee27bb3e460d24cdcc6774c1680f164b5e50"
+  integrity sha512-u6lP9x/HNeGHB0Oojv4c2mhuDvn7G0ikzYbK4IKLsH4HzHxt62faMjBzQMcFhKJhR6UiiKE/jiHrhGvBT/fMkw==
+  dependencies:
+    "@jimp/core" "^0.22.8"
+
+"@jimp/gif@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/gif/-/gif-0.22.8.tgz#6692a9117fb4b25620d92327fa305dd95cd57334"
+  integrity sha512-I0l6koS67IPU40RPxCJTD1NvePEd8vUIHTejx1ly0jrjGnumbqdarAlBUkDrKfPPc+Fnqp84hBbSN1w5hNPT6w==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    gifwrap "^0.9.2"
+    omggif "^1.0.9"
+
+"@jimp/jpeg@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/jpeg/-/jpeg-0.22.8.tgz#182c41108833bdc8c88598ef4c11bf4f197228eb"
+  integrity sha512-hLXrQ7/0QiUhAVAF10dfGCSq3hvyqjKltlpu/87b3wqMDKe9KdvhX1AJHiUUrAbJv1fAcnOmQGTyXGuySa1D6A==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    jpeg-js "^0.4.4"
+
+"@jimp/plugin-blit@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-blit/-/plugin-blit-0.22.8.tgz#b7ea7cbcbb0d7da87fb4124f0129ee539bf5ae49"
+  integrity sha512-rQ19txVCKIwo74HtgFodFt4//0ATPCJK+f24riqzb+nx+1JaOo1xRvpJqg4moirHwKR2fhwdDxmY7KX20kCeYA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-blur@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-blur/-/plugin-blur-0.22.8.tgz#d561de68d7154175b7a443d12949ba7d9fe255ca"
+  integrity sha512-GWbNK3YW6k2EKiGJdpAFEr0jezPBtiVxj2wG/lCPuWJz7KmzSSN99hQjIy73xQxoBCRdALfJlkhe3leFNRueSQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-circle@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-circle/-/plugin-circle-0.22.8.tgz#2182999a77d0fab7d9eaad94815524104307015f"
+  integrity sha512-qPCw8XFW8opT89ciFDuvs+eB3EB1mZIJWVajD2qAlprHiE7YGr34TkM7N5MNr3qZ1pJgkYdW6+HbBrJwBaonqw==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-color@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-color/-/plugin-color-0.22.8.tgz#3f64888b28438ac986a97c672babe6abec886cb3"
+  integrity sha512-ogkbg6rpDVH/mMLgAQKg17z3oZE0VN7ZWxNoH12fUHchqKz1I57zpa65fxZe2I8T5Xz97HR3x+7V7oI8qQGdSA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    tinycolor2 "^1.6.0"
+
+"@jimp/plugin-contain@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-contain/-/plugin-contain-0.22.8.tgz#5afad638558ccf69abfac0c85b6354534e22c0eb"
+  integrity sha512-oiaPLdJt9Dk+XEEhM/OU3lFemM51mA9NgMCAdburSCjDzKacJYBGFSHjTOhXzcxOie/ZDpOYN/UzFGKy8Dgl9A==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-cover@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-cover/-/plugin-cover-0.22.8.tgz#b7e2aa869ff3d68c6b3d68e46f9ddb309bf5fa8a"
+  integrity sha512-mO68w1m/LhfuHU8LKHY05a4/hhWnY4t+T+8JCw9t+5yfzA4+LofBZZKtFtWgwf/QGe1y3X2rtUU/avAzDUKyyA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-crop@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-crop/-/plugin-crop-0.22.8.tgz#2683de20d34eac0d457a5d231a0e3885023a2192"
+  integrity sha512-ns4oH0h0gezYsbuH8RThcMLY5uTLk/vnqOVjWCehMHEzxi0DHMWCmpcb6bC//vJ+XFNhtVGn1ALN7+ROmPrj+A==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-displace@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-displace/-/plugin-displace-0.22.8.tgz#d29992956fcdb01ab860bb00dd923964e88540f0"
+  integrity sha512-Cj8nHYgsdFynOIx3dbbiVwRuZn3xO+RVfwkTRy0JBye+K2AU8SQJS+hSFNMQFTZt5djivh6kh0TzvR/6LkOd1w==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-dither@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-dither/-/plugin-dither-0.22.8.tgz#75d31db459852bd6c2caf10ff74bc7340c9d3bf5"
+  integrity sha512-oE0Us/6bEgrgEg56plU3jSBzvB9iGhweKUHmxYMWnQbFCHP4mNCtPAs8+Fmq6c+m98ZgBgRcrJTnC7lphHkGyw==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-fisheye@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-fisheye/-/plugin-fisheye-0.22.8.tgz#980bd252ae9ebe903256fc238f224d7deb067813"
+  integrity sha512-bWvYY/nfMcKclWEaRyAir+YsT6C5St823HUQAsewZowTrJmme+w4U2a6InsryTHUL01BBcV5BLH0aDHuV3StvA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-flip@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-flip/-/plugin-flip-0.22.8.tgz#c359436260455af0ec4156d9823a55b75b776d94"
+  integrity sha512-0NFTNzjsdmOQkaIkNjZqO3/yU4SQb9nnWQXsLS1fFo+9QrIL5v8vVkXpk/rhiND6PyTj2mMTNjOa76GuZcC+iQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-gaussian@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-gaussian/-/plugin-gaussian-0.22.8.tgz#bd52b0944055afa9344496af9a1f05c8d7127ded"
+  integrity sha512-E/f14aLzCS50QAM7K+InI9V61KVy/Zx52vy7Jjfo1h7qKhQHss3PYaydaH0N6qlXRNeXgh+4/32P9JfieLMcdw==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-invert@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-invert/-/plugin-invert-0.22.8.tgz#d52c4c735720359d942a600827693b2e097c61a7"
+  integrity sha512-UauP39FF2cwbA5VU+Tz9VlNa9rtULPSHZb0Huwcjqjm9/G/xVN69VJ8+RKiFC4zM1/kYAUp/6IRwPa6qdKJpSw==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-mask@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-mask/-/plugin-mask-0.22.8.tgz#80adff958c1cec3d4727a21018f4f7062a697394"
+  integrity sha512-bhg5+3i8x1CmYj6cjvPBQZLwZEI3iK3gJWF25ZHF+12d3cqDuJngtr8oRQOQLlAgvKmrj9FXIiEPDczUI9cnWQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-normalize@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-normalize/-/plugin-normalize-0.22.8.tgz#e60e864c7b0270920517e6276d847c4604154051"
+  integrity sha512-Yg5nreAR1JYuSObu3ExlgaLxVeW6VvjVL5qFwiPFxSNlG8JIwL1Ir3K3ChSnnvymyZvJMHb6YKTYNfXKw5Da6g==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-print@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-print/-/plugin-print-0.22.8.tgz#fa1e6659a1cc34dddceee33e887cbf6fc0d99038"
+  integrity sha512-86O5ejCDi543IYl0TykSmNWErzAjEYhiAxNQb2F7rFRT38WJYNVsvJ6QhxhDQHKxSmF5iwmqbk0jYk5Wp2Z1kw==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    load-bmfont "^1.4.1"
+
+"@jimp/plugin-resize@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-resize/-/plugin-resize-0.22.8.tgz#d111c164512fb54c096da55dcabf681a5b57d458"
+  integrity sha512-kg8ArQRPqv/iU3DWNXCa8kcVIhoq64Ze0aGCAeFLKlAq/59f5pzAci6m6vV4L/uOVdYmUa9/kYwIFY6RWKpfzQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-rotate@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-rotate/-/plugin-rotate-0.22.8.tgz#3b61655a1a38600e01c73210c201c690041c3bcb"
+  integrity sha512-9a+VPZWMN/Cks76wf8LjM5RVA3ntP9+NAdsS1SZhhXel7U3Re/dWMouIEbo3QTt6K+igRo4txUCdZiw4ZucvkQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-scale@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-scale/-/plugin-scale-0.22.8.tgz#b5a4f798aebefa914e942a0feae6dc179230d974"
+  integrity sha512-dQS4pG6DX6endu8zUpvBBOEtGC+ljDDDNw0scSXY71TxyQdNo5Ro0apfsppjmuAr8rNotRkfyxbITKkXQDRUDQ==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-shadow@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-shadow/-/plugin-shadow-0.22.8.tgz#ba6c14074aafbc47c550878044e7c18498c91907"
+  integrity sha512-HyAhr7OblTQh+BoKHQg4qbS9MweNlH77yfpBqUEyDtfyjI5r06+5chf1ZdLRIPEWv/BdCfdI/g81Wv69muCMwA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugin-threshold@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugin-threshold/-/plugin-threshold-0.22.8.tgz#63b96ce4f82250ef993bfb7e88f12dae94e17a04"
+  integrity sha512-ZmkfH0PtjvF1UcKsjw0H7V6r+LC0yKzEfg76Jhs2nIqIgsxsSOVfHwS7z0/1IWnyXxSw36m+NjCAotNHRILGmA==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+
+"@jimp/plugins@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/plugins/-/plugins-0.22.8.tgz#07683e350d3578b319580bf445650df88fb7eccd"
+  integrity sha512-ieI2+kCpmIfjwVlT7B67ULCzxMizfj7LspJh9HnIZCDXQB9GBOZ9KImLYc75Krae0dP/3FR7FglLiSI7fkOHbw==
+  dependencies:
+    "@jimp/plugin-blit" "^0.22.8"
+    "@jimp/plugin-blur" "^0.22.8"
+    "@jimp/plugin-circle" "^0.22.8"
+    "@jimp/plugin-color" "^0.22.8"
+    "@jimp/plugin-contain" "^0.22.8"
+    "@jimp/plugin-cover" "^0.22.8"
+    "@jimp/plugin-crop" "^0.22.8"
+    "@jimp/plugin-displace" "^0.22.8"
+    "@jimp/plugin-dither" "^0.22.8"
+    "@jimp/plugin-fisheye" "^0.22.8"
+    "@jimp/plugin-flip" "^0.22.8"
+    "@jimp/plugin-gaussian" "^0.22.8"
+    "@jimp/plugin-invert" "^0.22.8"
+    "@jimp/plugin-mask" "^0.22.8"
+    "@jimp/plugin-normalize" "^0.22.8"
+    "@jimp/plugin-print" "^0.22.8"
+    "@jimp/plugin-resize" "^0.22.8"
+    "@jimp/plugin-rotate" "^0.22.8"
+    "@jimp/plugin-scale" "^0.22.8"
+    "@jimp/plugin-shadow" "^0.22.8"
+    "@jimp/plugin-threshold" "^0.22.8"
+    timm "^1.6.1"
+
+"@jimp/png@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/png/-/png-0.22.8.tgz#3fd5e546087aede4011ceb1f75e912dbc8ff696e"
+  integrity sha512-XOj11kcCr8zKg24QSwlRfH9k4hbV6rkMGUVxMS3puRzzB0FBSQy42NBYEfYf2XlY2QJSAByPl4AYerOtKb805w==
+  dependencies:
+    "@jimp/utils" "^0.22.8"
+    pngjs "^6.0.0"
+
+"@jimp/tiff@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/tiff/-/tiff-0.22.8.tgz#e584e087633cbfad90fcca82439fabcba4b6786e"
+  integrity sha512-K0hYUVW5MLgwq3jiHVHa6LvP05J1rXOlRCC+5dMTUnAXVwi45+MKsqA/8lzzwhHYJ65CNhZwy6D3+ZNzM9SIBQ==
+  dependencies:
+    utif2 "^4.0.1"
+
+"@jimp/types@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/types/-/types-0.22.8.tgz#4dedda51186a1d950108ed9856f5d17a9f003597"
+  integrity sha512-9+xc+mzuYwu0i+6dsnhXiUgfcS+Ktqn5q2jczoKyyBT0cOKgsk+57EIeFLgpTfVGRKRR0y/UIdHByeCzGguF3A==
+  dependencies:
+    "@jimp/bmp" "^0.22.8"
+    "@jimp/gif" "^0.22.8"
+    "@jimp/jpeg" "^0.22.8"
+    "@jimp/png" "^0.22.8"
+    "@jimp/tiff" "^0.22.8"
+    timm "^1.6.1"
+
+"@jimp/utils@^0.22.8":
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/@jimp/utils/-/utils-0.22.8.tgz#04039431a00f62e0c630b376aab848f8718fb9a1"
+  integrity sha512-AaqjfqDeLzSFzrbGRKHMXg/ntiWKvoG9tpVgWzgOx5/gPWj/IyGfztojLTTvY8HqZCr25z8z91u2lAQD2v46Jw==
+  dependencies:
+    regenerator-runtime "^0.13.3"
+
 "@jvitela/mustache-wax@^1.0.1":
   version "1.0.4"
   resolved "http://bnpm.byted.org/@jvitela/mustache-wax/-/mustache-wax-1.0.4.tgz#18c54e8dc9793e01515674beadf80bd1dfb1dd29"
   integrity sha512-cGugVYp0WO7w89KQlyyt2rQyCO5MbrKeqtIAkG8oBfOaiHoeGeKG7WYdBFHftvoZUuK4WFbWyn3hgFipdetC+Q==
+
+"@tokenizer/token@^0.3.0":
+  version "0.3.0"
+  resolved "http://bnpm.byted.org/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
+  integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
+
+"@types/node@16.9.1":
+  version "16.9.1"
+  resolved "http://bnpm.byted.org/@types/node/-/node-16.9.1.tgz#0611b37db4246c937feef529ddcc018cf8e35708"
+  integrity sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==
 
 "@types/node@^13.1.0":
   version "13.13.52"
   resolved "http://bnpm.byted.org/@types/node/-/node-13.13.52.tgz#03c13be70b9031baaed79481c0c0cfb0045e53f7"
   integrity sha512-s3nugnZumCC//n4moGGe6tkNMyYEdaDBitVjwPxXmR5lnMG5dHePinH2EdxkG3Rh1ghFHHixAG4NJhpJW1rthQ==
 
-ajv@^6.12.3:
-  version "6.12.6"
-  resolved "http://bnpm.byted.org/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
-  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    fast-json-stable-stringify "^2.0.0"
-    json-schema-traverse "^0.4.1"
-    uri-js "^4.2.2"
+any-base@^1.1.0:
+  version "1.1.0"
+  resolved "http://bnpm.byted.org/any-base/-/any-base-1.1.0.tgz#ae101a62bc08a597b4c9ab5b7089d456630549fe"
+  integrity sha512-uMgjozySS8adZZYePpaWs8cxB9/kdzmpX6SgJZ+wbz1K5eYk5QMYDVJaZKhxyIHUdnnJkfR7SVgStgH7LkGUyg==
 
-asn1@~0.2.3:
-  version "0.2.6"
-  resolved "http://bnpm.byted.org/asn1/-/asn1-0.2.6.tgz#0d3a7bb6e64e02a90c0303b31f292868ea09a08d"
-  integrity sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==
-  dependencies:
-    safer-buffer "~2.1.0"
+base64-js@^1.3.1:
+  version "1.5.1"
+  resolved "http://bnpm.byted.org/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
-assert-plus@1.0.0, assert-plus@^1.0.0:
-  version "1.0.0"
-  resolved "http://bnpm.byted.org/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
-  integrity sha512-NfJ4UzBCcQGLDlQq7nHxH+tv3kyZ0hHQqF5BO6J7tNJeP5do1llPr8dZ8zHonfhAu0PHAdMkSo+8o0wxg9lZWw==
-
-asynckit@^0.4.0:
-  version "0.4.0"
-  resolved "http://bnpm.byted.org/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
-  integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
-
-aws-sign2@~0.7.0:
-  version "0.7.0"
-  resolved "http://bnpm.byted.org/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
-  integrity sha512-08kcGqnYf/YmjoRhfxyu+CLxBjUtHLXLXX/vUfx9l2LYzG3c1m61nrpyFUZI6zeS+Li/wWMMidD9KgrqtGq3mA==
-
-aws4@^1.8.0:
-  version "1.12.0"
-  resolved "http://bnpm.byted.org/aws4/-/aws4-1.12.0.tgz#ce1c9d143389679e253b314241ea9aa5cec980d3"
-  integrity sha512-NmWvPnx0F1SfrQbYwOi7OeaNGokp9XhzNioJ/CSBs8Qa4vxug81mhJEAVZwxXuBmYB5KDRfMq/F3RR0BIU7sWg==
-
-bcrypt-pbkdf@^1.0.0:
-  version "1.0.2"
-  resolved "http://bnpm.byted.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
-  integrity sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==
-  dependencies:
-    tweetnacl "^0.14.3"
-
-bignumber.js@^2.1.0:
-  version "2.4.0"
-  resolved "http://bnpm.byted.org/bignumber.js/-/bignumber.js-2.4.0.tgz#838a992da9f9d737e0f4b2db0be62bb09dd0c5e8"
-  integrity sha512-uw4ra6Cv483Op/ebM0GBKKfxZlSmn6NgFRby5L3yGTlunLj53KQgndDlqy2WVFOwgvurocApYkSud0aO+mvrpQ==
-
-bmp-js@0.0.3:
-  version "0.0.3"
-  resolved "http://bnpm.byted.org/bmp-js/-/bmp-js-0.0.3.tgz#64113e9c7cf1202b376ed607bf30626ebe57b18a"
-  integrity sha512-epsm3Z92j5xwek9p97pVw3KbsNc0F4QnbYh+N93SpbJYuHFQQ/UAh6K+bKFGyLePH3Hudtl/Sa95Quqp0gX8IQ==
+bmp-js@^0.1.0:
+  version "0.1.0"
+  resolved "http://bnpm.byted.org/bmp-js/-/bmp-js-0.1.0.tgz#e05a63f796a6c1ff25f4771ec7adadc148c07233"
+  integrity sha512-vHdS19CnY3hwiNdkaqk93DvjVLfbEcI8mys4UjuWrlX1haDmroo8o4xCzh4wD6DGV6HxRCyauwhHRqMTfERtjw==
 
 buffer-equal@0.0.1:
   version "0.0.1"
   resolved "http://bnpm.byted.org/buffer-equal/-/buffer-equal-0.0.1.tgz#91bc74b11ea405bc916bc6aa908faafa5b4aac4b"
   integrity sha512-RgSV6InVQ9ODPdLWJ5UAqBqJBOg370Nz6ZQtRzpt6nUjc8v0St97uJ4PYC6NztqIScrAXafKM3mZPMygSe1ggA==
 
-caseless@~0.12.0:
-  version "0.12.0"
-  resolved "http://bnpm.byted.org/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
-  integrity sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==
-
-combined-stream@^1.0.6, combined-stream@~1.0.6:
-  version "1.0.8"
-  resolved "http://bnpm.byted.org/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
-  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+buffer@^5.2.0:
+  version "5.7.1"
+  resolved "http://bnpm.byted.org/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
+  integrity sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
   dependencies:
-    delayed-stream "~1.0.0"
-
-core-util-is@1.0.2:
-  version "1.0.2"
-  resolved "http://bnpm.byted.org/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
-  integrity sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==
-
-dashdash@^1.12.0:
-  version "1.14.1"
-  resolved "http://bnpm.byted.org/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
-  integrity sha512-jRFi8UDGo6j+odZiEpjazZaWqEal3w/basFjQHQEwVtZJGDpxbH1MeYluwCS8Xq5wmLJooDlMgvVarmWfGM44g==
-  dependencies:
-    assert-plus "^1.0.0"
-
-delayed-stream@~1.0.0:
-  version "1.0.0"
-  resolved "http://bnpm.byted.org/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
-  integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+    base64-js "^1.3.1"
+    ieee754 "^1.1.13"
 
 dom-walk@^0.1.0:
   version "0.1.2"
   resolved "http://bnpm.byted.org/dom-walk/-/dom-walk-0.1.2.tgz#0c548bef048f4d1f2a97249002236060daa3fd84"
   integrity sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
-
-ecc-jsbn@~0.1.1:
-  version "0.1.2"
-  resolved "http://bnpm.byted.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz#3a83a904e54353287874c564b7549386849a98c9"
-  integrity sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==
-  dependencies:
-    jsbn "~0.1.0"
-    safer-buffer "^2.1.0"
-
-es6-promise@^3.0.2:
-  version "3.3.1"
-  resolved "http://bnpm.byted.org/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
-  integrity sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==
 
 esbuild@^0.18.11:
   version "0.18.11"
@@ -256,61 +451,27 @@ esbuild@^0.18.11:
     "@esbuild/win32-ia32" "0.18.11"
     "@esbuild/win32-x64" "0.18.11"
 
-exif-parser@^0.1.9:
+exif-parser@^0.1.12:
   version "0.1.12"
   resolved "http://bnpm.byted.org/exif-parser/-/exif-parser-0.1.12.tgz#58a9d2d72c02c1f6f02a0ef4a9166272b7760922"
   integrity sha512-c2bQfLNbMzLPmzQuOr8fy0csy84WmwnER81W88DzTp9CYNPJ6yzOj2EZAh9pywYpqHnshVLHQJ8WzldAyfY+Iw==
 
-extend@~3.0.2:
-  version "3.0.2"
-  resolved "http://bnpm.byted.org/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
-  integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
-
-extsprintf@1.3.0:
-  version "1.3.0"
-  resolved "http://bnpm.byted.org/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
-  integrity sha512-11Ndz7Nv+mvAC1j0ktTa7fAb0vLyGGX+rMHNBYQviQDGU0Hw7lhctJANqbPhu9nV9/izT/IntTgZ7Im/9LJs9g==
-
-extsprintf@^1.2.0:
-  version "1.4.1"
-  resolved "http://bnpm.byted.org/extsprintf/-/extsprintf-1.4.1.tgz#8d172c064867f235c0c84a596806d279bf4bcc07"
-  integrity sha512-Wrk35e8ydCKDj/ArClo1VrPVmN8zph5V4AtHwIuHhvMXsKf73UT3BOD+azBIW+3wOJ4FhEH7zyaJCFvChjYvMA==
-
-fast-deep-equal@^3.1.1:
-  version "3.1.3"
-  resolved "http://bnpm.byted.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
-  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
-
-fast-json-stable-stringify@^2.0.0:
-  version "2.1.0"
-  resolved "http://bnpm.byted.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
-  integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
-
-file-type@^3.1.0:
-  version "3.9.0"
-  resolved "http://bnpm.byted.org/file-type/-/file-type-3.9.0.tgz#257a078384d1db8087bc449d107d52a52672b9e9"
-  integrity sha512-RLoqTXE8/vPmMuTI88DAzhMYC99I8BWv7zYP4A1puo5HIjEJ5EX48ighy4ZyKMG9EDXxBgW6e++cn7d1xuFghA==
-
-forever-agent@~0.6.1:
-  version "0.6.1"
-  resolved "http://bnpm.byted.org/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
-  integrity sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==
-
-form-data@~2.3.2:
-  version "2.3.3"
-  resolved "http://bnpm.byted.org/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
-  integrity sha512-1lLKB2Mu3aGP1Q/2eCOx0fNbRMe7XdwktwOruhfqqd0rIJWwN4Dh+E3hrPSlDCXnSR7UtZ1N38rVXm+6+MEhJQ==
+file-type@^16.5.4:
+  version "16.5.4"
+  resolved "http://bnpm.byted.org/file-type/-/file-type-16.5.4.tgz#474fb4f704bee427681f98dd390058a172a6c2fd"
+  integrity sha512-/yFHK0aGjFEgDJjEKP0pWCplsPFPhwyfwevf/pVxiN0tmE4L9LmwWxWukdJSHdoCli4VgQLehjJtwQBnqmsKcw==
   dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.6"
-    mime-types "^2.1.12"
+    readable-web-to-node-stream "^3.0.0"
+    strtok3 "^6.2.4"
+    token-types "^4.1.1"
 
-getpass@^0.1.1:
-  version "0.1.7"
-  resolved "http://bnpm.byted.org/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
-  integrity sha512-0fzj9JxOLfJ+XGLhR8ze3unN0KZCgZwiSSDz168VERjK8Wl8kVSdcu2kspd4s4wtAa1y/qrVRiAA0WclVsu0ng==
+gifwrap@^0.9.2:
+  version "0.9.4"
+  resolved "http://bnpm.byted.org/gifwrap/-/gifwrap-0.9.4.tgz#f4eb6169ba027d61df64aafbdcb1f8ae58ccc0c5"
+  integrity sha512-MDMwbhASQuVeD4JKd1fKgNgCRL3fGqMM4WaqpNhWO0JiMOAjbQdumbs4BbBZEy9/M00EHEjKN3HieVhCUlwjeQ==
   dependencies:
-    assert-plus "^1.0.0"
+    image-q "^4.0.0"
+    omggif "^1.0.10"
 
 global@~4.4.0:
   version "4.4.0"
@@ -320,106 +481,52 @@ global@~4.4.0:
     min-document "^2.19.0"
     process "^0.11.10"
 
-har-schema@^2.0.0:
-  version "2.0.0"
-  resolved "http://bnpm.byted.org/har-schema/-/har-schema-2.0.0.tgz#a94c2224ebcac04782a0d9035521f24735b7ec92"
-  integrity sha512-Oqluz6zhGX8cyRaTQlFMPw80bSJVG2x/cFb8ZPhUILGgHka9SsokCCOQgpveePerqidZOrT14ipqfJb7ILcW5Q==
+ieee754@^1.1.13, ieee754@^1.2.1:
+  version "1.2.1"
+  resolved "http://bnpm.byted.org/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-har-validator@~5.1.3:
-  version "5.1.5"
-  resolved "http://bnpm.byted.org/har-validator/-/har-validator-5.1.5.tgz#1f0803b9f8cb20c0fa13822df1ecddb36bde1efd"
-  integrity sha512-nmT2T0lljbxdQZfspsno9hgrG3Uir6Ks5afism62poxqBM6sDnMEuPmzTq8XN0OEwqKLLdh1jQI3qyE66Nzb3w==
+image-q@^4.0.0:
+  version "4.0.0"
+  resolved "http://bnpm.byted.org/image-q/-/image-q-4.0.0.tgz#31e075be7bae3c1f42a85c469b4732c358981776"
+  integrity sha512-PfJGVgIfKQJuq3s0tTDOKtztksibuUEbJQIYT3by6wctQo+Rdlh7ef4evJ5NCdxY4CfMbvFkocEwbl4BF8RlJw==
   dependencies:
-    ajv "^6.12.3"
-    har-schema "^2.0.0"
+    "@types/node" "16.9.1"
 
-http-signature@~1.2.0:
-  version "1.2.0"
-  resolved "http://bnpm.byted.org/http-signature/-/http-signature-1.2.0.tgz#9aecd925114772f3d95b65a60abb8f7c18fbace1"
-  integrity sha512-CAbnr6Rz4CYQkLYUtSNXxQPUH2gK8f3iWexVlsnMeD+GjlsQ0Xsy1cOX+mN3dtxYomRy21CiOzU8Uhw6OwncEQ==
-  dependencies:
-    assert-plus "^1.0.0"
-    jsprim "^1.2.2"
-    sshpk "^1.7.0"
-
-ip-regex@^1.0.1:
-  version "1.0.3"
-  resolved "http://bnpm.byted.org/ip-regex/-/ip-regex-1.0.3.tgz#dc589076f659f419c222039a33316f1c7387effd"
-  integrity sha512-HjpCHTuxbR/6jWJroc/VN+npo5j0T4Vv2TAI5qdEHQx7hsL767MeccGFSsLtF694EiZKTSEqgoeU6DtGFCcuqQ==
+inherits@^2.0.3:
+  version "2.0.4"
+  resolved "http://bnpm.byted.org/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 is-function@^1.0.1:
   version "1.0.2"
   resolved "http://bnpm.byted.org/is-function/-/is-function-1.0.2.tgz#4f097f30abf6efadac9833b17ca5dc03f8144e08"
   integrity sha512-lw7DUp0aWXYg+CBCN+JKkcE0Q2RayZnSvnZBlwgxHBQhqt5pZNVy4Ri7H9GmmXkdu7LUthszM+Tor1u/2iBcpQ==
 
-is-typedarray@~1.0.0:
-  version "1.0.0"
-  resolved "http://bnpm.byted.org/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
-  integrity sha512-cyA56iCMHAh5CdzjJIa4aohJyeO1YbwLi3Jc35MmRU6poroFjIGZzUzupGiRPOjgHg9TLu43xbpwXk523fMxKA==
-
-isstream@~0.1.2:
-  version "0.1.2"
-  resolved "http://bnpm.byted.org/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
-  integrity sha512-Yljz7ffyPbrLpLngrMtZ7NduUgVvi6wG9RJ9IUcyCd59YQ911PBJphODUcbOVbqYfxe1wuYf/LJ8PauMRwsM/g==
-
-jimp@^0.2.28:
-  version "0.2.28"
-  resolved "http://bnpm.byted.org/jimp/-/jimp-0.2.28.tgz#dd529a937190f42957a7937d1acc3a7762996ea2"
-  integrity sha512-9HT7DA279xkTlry2oG30s6AtOUglNiY2UdyYpj0yNI4/NBv8PmdNC0gcldgMU4HqvbUlrM3+v+6GaHnTkH23JQ==
+isomorphic-fetch@^3.0.0:
+  version "3.0.0"
+  resolved "http://bnpm.byted.org/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz#0267b005049046d2421207215d45d6a262b8b8b4"
+  integrity sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==
   dependencies:
-    bignumber.js "^2.1.0"
-    bmp-js "0.0.3"
-    es6-promise "^3.0.2"
-    exif-parser "^0.1.9"
-    file-type "^3.1.0"
-    jpeg-js "^0.2.0"
-    load-bmfont "^1.2.3"
-    mime "^1.3.4"
-    mkdirp "0.5.1"
-    pixelmatch "^4.0.0"
-    pngjs "^3.0.0"
-    read-chunk "^1.0.1"
-    request "^2.65.0"
-    stream-to-buffer "^0.1.0"
-    tinycolor2 "^1.1.2"
-    url-regex "^3.0.0"
+    node-fetch "^2.6.1"
+    whatwg-fetch "^3.4.1"
 
-jpeg-js@^0.2.0:
-  version "0.2.0"
-  resolved "http://bnpm.byted.org/jpeg-js/-/jpeg-js-0.2.0.tgz#53e448ec9d263e683266467e9442d2c5a2ef5482"
-  integrity sha512-Ni9PffhJtYtdD7VwxH6V2MnievekGfUefosGCHadog0/jAevRu6HPjYeMHbUemn0IPE8d4wGa8UsOGsX+iKy2g==
-
-jsbn@~0.1.0:
-  version "0.1.1"
-  resolved "http://bnpm.byted.org/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
-  integrity sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==
-
-json-schema-traverse@^0.4.1:
-  version "0.4.1"
-  resolved "http://bnpm.byted.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
-  integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
-
-json-schema@0.4.0:
-  version "0.4.0"
-  resolved "http://bnpm.byted.org/json-schema/-/json-schema-0.4.0.tgz#f7de4cf6efab838ebaeb3236474cbba5a1930ab5"
-  integrity sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==
-
-json-stringify-safe@~5.0.1:
-  version "5.0.1"
-  resolved "http://bnpm.byted.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
-  integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
-
-jsprim@^1.2.2:
-  version "1.4.2"
-  resolved "http://bnpm.byted.org/jsprim/-/jsprim-1.4.2.tgz#712c65533a15c878ba59e9ed5f0e26d5b77c5feb"
-  integrity sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==
+jimp@0.22.8:
+  version "0.22.8"
+  resolved "http://bnpm.byted.org/jimp/-/jimp-0.22.8.tgz#85db9a2de69370c36d8b5ae070381af83dbbb40f"
+  integrity sha512-pBbrooJMX7795sDcxx1XpwNZC8B/ITyDV+JK2/1qNbQl/1UWqWeh5Dq7qQpMZl5jLdcFDv5IVTM+OhpafSqSFA==
   dependencies:
-    assert-plus "1.0.0"
-    extsprintf "1.3.0"
-    json-schema "0.4.0"
-    verror "1.10.0"
+    "@jimp/custom" "^0.22.8"
+    "@jimp/plugins" "^0.22.8"
+    "@jimp/types" "^0.22.8"
+    regenerator-runtime "^0.13.3"
 
-load-bmfont@^1.2.3:
+jpeg-js@^0.4.4:
+  version "0.4.4"
+  resolved "http://bnpm.byted.org/jpeg-js/-/jpeg-js-0.4.4.tgz#a9f1c6f1f9f0fa80cdb3484ed9635054d28936aa"
+  integrity sha512-WZzeDOEtTOBK4Mdsar0IqEU5sMr3vSV2RqkAIzUEV2BHnUfKGyswWFPFwK5EeDo93K3FohSHbLAjj0s1Wzd+dg==
+
+load-bmfont@^1.4.1:
   version "1.4.1"
   resolved "http://bnpm.byted.org/load-bmfont/-/load-bmfont-1.4.1.tgz#c0f5f4711a1e2ccff725a7b6078087ccfcddd3e9"
   integrity sha512-8UyQoYmdRDy81Brz6aLAUhfZLwr5zV0L3taTQ4hju7m6biuwiWiJXjPhBJxbUQJA8PrkvJ/7Enqmwk2sM14soA==
@@ -438,18 +545,6 @@ maxrects-packer@^2.5.0:
   resolved "http://bnpm.byted.org/maxrects-packer/-/maxrects-packer-2.7.3.tgz#ffc97bede8f15867951c3876d574c094e4e9432e"
   integrity sha512-bG6qXujJ1QgttZVIH4WDanhoJtvbud/xP/XPyf6A69C9RdA61BM4TomFALCq2nrTa+tARRIBB4LuIFsnUQU2wA==
 
-mime-db@1.52.0:
-  version "1.52.0"
-  resolved "http://bnpm.byted.org/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
-  integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
-
-mime-types@^2.1.12, mime-types@~2.1.19:
-  version "2.1.35"
-  resolved "http://bnpm.byted.org/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
-  integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
-  dependencies:
-    mime-db "1.52.0"
-
 mime@^1.3.4:
   version "1.6.0"
   resolved "http://bnpm.byted.org/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
@@ -462,27 +557,32 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "http://bnpm.byted.org/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-  integrity sha512-miQKw5Hv4NS1Psg2517mV4e4dYNaO3++hjAvLOAzKqZ61rH8NS1SK+vbfBWZ5PY/Me/bEWhUwqMghEW5Fb9T7Q==
-
-mkdirp@0.5.1:
-  version "0.5.1"
-  resolved "http://bnpm.byted.org/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
-  integrity sha512-SknJC52obPfGQPnjIkXbmA6+5H15E+fR+E4iR2oQ3zzCLbd7/ONua69R/Gw7AgkTLsRG+r5fzksYwWe1AgTyWA==
-  dependencies:
-    minimist "0.0.8"
+mkdirp@^2.1.3:
+  version "2.1.6"
+  resolved "http://bnpm.byted.org/mkdirp/-/mkdirp-2.1.6.tgz#964fbcb12b2d8c5d6fbc62a963ac95a273e2cc19"
+  integrity sha512-+hEnITedc8LAtIP9u3HJDFIdcLV2vXP33sqLLIzkv1Db1zO/1OxbvYf0Y1OC/S/Qo5dxHXepofhmxL02PsKe+A==
 
 mustache@^2.3.0:
   version "2.3.2"
   resolved "http://bnpm.byted.org/mustache/-/mustache-2.3.2.tgz#a6d4d9c3f91d13359ab889a812954f9230a3d0c5"
   integrity sha512-KpMNwdQsYz3O/SBS1qJ/o3sqUJ5wSb8gb0pul8CO0S56b9Y2ALm8zCfsjPXsqGFfoNBkDwZuZIAjhsZI03gYVQ==
 
-oauth-sign@~0.9.0:
-  version "0.9.0"
-  resolved "http://bnpm.byted.org/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
-  integrity sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
+node-fetch@^2.6.1:
+  version "2.6.12"
+  resolved "http://bnpm.byted.org/node-fetch/-/node-fetch-2.6.12.tgz#02eb8e22074018e3d5a83016649d04df0e348fba"
+  integrity sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==
+  dependencies:
+    whatwg-url "^5.0.0"
+
+omggif@^1.0.10, omggif@^1.0.9:
+  version "1.0.10"
+  resolved "http://bnpm.byted.org/omggif/-/omggif-1.0.10.tgz#ddaaf90d4a42f532e9e7cb3a95ecdd47f17c7b19"
+  integrity sha512-LMJTtvgc/nugXj0Vcrrs68Mn2D1r0zf630VNtqtpI1FEO7e+O9FP4gqs9AcnBaSEeoHIPm28u6qgPR0oyEpGSw==
+
+pako@^1.0.11:
+  version "1.0.11"
+  resolved "http://bnpm.byted.org/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
+  integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
 parse-bmfont-ascii@^1.0.3:
   version "1.0.6"
@@ -507,17 +607,17 @@ parse-headers@^2.0.0:
   resolved "http://bnpm.byted.org/parse-headers/-/parse-headers-2.0.5.tgz#069793f9356a54008571eb7f9761153e6c770da9"
   integrity sha512-ft3iAoLOB/MlwbNXgzy43SWGP6sQki2jQvAyBg/zDFAgr9bfNWZIUj42Kw2eJIl8kEi4PbgE6U1Zau/HwI75HA==
 
-performance-now@^2.1.0:
-  version "2.1.0"
-  resolved "http://bnpm.byted.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
-  integrity sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==
+peek-readable@^4.1.0:
+  version "4.1.0"
+  resolved "http://bnpm.byted.org/peek-readable/-/peek-readable-4.1.0.tgz#4ece1111bf5c2ad8867c314c81356847e8a62e72"
+  integrity sha512-ZI3LnwUv5nOGbQzD9c2iDG6toheuXSZP5esSHBjopsXH4dg19soufvpUGA3uohi5anFtGb2lhAVdHzH6R/Evvg==
 
 phin@^2.9.1:
   version "2.9.3"
   resolved "http://bnpm.byted.org/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
   integrity sha512-CzFr90qM24ju5f88quFC/6qohjC144rehe5n6DH900lgXmUe86+xCKc10ev56gRKC4/BkHUoG4uSiQgBiIXwDA==
 
-pixelmatch@^4.0.0:
+pixelmatch@^4.0.2:
   version "4.0.2"
   resolved "http://bnpm.byted.org/pixelmatch/-/pixelmatch-4.0.2.tgz#8f47dcec5011b477b67db03c243bc1f3085e8854"
   integrity sha512-J8B6xqiO37sU/gkcMglv6h5Jbd9xNER7aHzpfRdNmV4IbQBzBpe4l9XmbG+xPF/znacgu2jfEw+wHffaq/YkXA==
@@ -528,6 +628,11 @@ pngjs@^3.0.0:
   version "3.4.0"
   resolved "http://bnpm.byted.org/pngjs/-/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
   integrity sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==
+
+pngjs@^6.0.0:
+  version "6.0.0"
+  resolved "http://bnpm.byted.org/pngjs/-/pngjs-6.0.0.tgz#ca9e5d2aa48db0228a52c419c3308e87720da821"
+  integrity sha512-TRzzuFRRmEoSW/p1KVAmiOgPco2Irlah+bGFCeNfJXxxYGwSw7YwAOAcd7X28K/m5bjBWKsC29KyoMfHbypayg==
 
 process@^0.11.10:
   version "0.11.10"
@@ -544,93 +649,56 @@ process@^0.11.10:
   resolved "http://bnpm.byted.org/proxying-agent/-/proxying-agent-2.4.0.tgz#6796549fc46bf3423554440f64a4449220f9014d"
   integrity sha512-b9vDqIcViJZVsWPpQlp9Py74u+Wqd0a+kMkkg7zX58mwNtrNbOChNlRTM7lUrlpiwNzyJCV8+5D8rnZYLDFh7Q==
 
-psl@^1.1.28:
-  version "1.9.0"
-  resolved "http://bnpm.byted.org/psl/-/psl-1.9.0.tgz#d0df2a137f00794565fcaf3b2c00cd09f8d5a5a7"
-  integrity sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==
-
-punycode@^2.1.0, punycode@^2.1.1:
-  version "2.3.0"
-  resolved "http://bnpm.byted.org/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
-  integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
-
-qs@~6.5.2:
-  version "6.5.3"
-  resolved "http://bnpm.byted.org/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
-  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
-
-read-chunk@^1.0.1:
-  version "1.0.1"
-  resolved "http://bnpm.byted.org/read-chunk/-/read-chunk-1.0.1.tgz#5f68cab307e663f19993527d9b589cace4661194"
-  integrity sha512-5NLTTdX45dKFtG8CX5pKmvS9V5u9wBE+gkklN7xhDuhq3pA2I4O7ALfKxosCMcLHOhkxj6GNacZhfXtp5nlCdg==
-
-request@^2.65.0:
-  version "2.88.2"
-  resolved "http://bnpm.byted.org/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
-  integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
+readable-stream@^3.6.0:
+  version "3.6.2"
+  resolved "http://bnpm.byted.org/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
+  integrity sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
   dependencies:
-    aws-sign2 "~0.7.0"
-    aws4 "^1.8.0"
-    caseless "~0.12.0"
-    combined-stream "~1.0.6"
-    extend "~3.0.2"
-    forever-agent "~0.6.1"
-    form-data "~2.3.2"
-    har-validator "~5.1.3"
-    http-signature "~1.2.0"
-    is-typedarray "~1.0.0"
-    isstream "~0.1.2"
-    json-stringify-safe "~5.0.1"
-    mime-types "~2.1.19"
-    oauth-sign "~0.9.0"
-    performance-now "^2.1.0"
-    qs "~6.5.2"
-    safe-buffer "^5.1.2"
-    tough-cookie "~2.5.0"
-    tunnel-agent "^0.6.0"
-    uuid "^3.3.2"
+    inherits "^2.0.3"
+    string_decoder "^1.1.1"
+    util-deprecate "^1.0.1"
 
-safe-buffer@^5.0.1, safe-buffer@^5.1.2:
+readable-web-to-node-stream@^3.0.0:
+  version "3.0.2"
+  resolved "http://bnpm.byted.org/readable-web-to-node-stream/-/readable-web-to-node-stream-3.0.2.tgz#5d52bb5df7b54861fd48d015e93a2cb87b3ee0bb"
+  integrity sha512-ePeK6cc1EcKLEhJFt/AebMCLL+GgSKhuygrZ/GLaKZYEecIgIECf4UaUuaByiGtzckwR4ain9VzUh95T1exYGw==
+  dependencies:
+    readable-stream "^3.6.0"
+
+regenerator-runtime@^0.13.3:
+  version "0.13.11"
+  resolved "http://bnpm.byted.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
+
+safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "http://bnpm.byted.org/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
-
-safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
-  version "2.1.2"
-  resolved "http://bnpm.byted.org/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
-  integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
 sax@>=0.6.0:
   version "1.2.4"
   resolved "http://bnpm.byted.org/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-sshpk@^1.7.0:
-  version "1.17.0"
-  resolved "http://bnpm.byted.org/sshpk/-/sshpk-1.17.0.tgz#578082d92d4fe612b13007496e543fa0fbcbe4c5"
-  integrity sha512-/9HIEs1ZXGhSPE8X6Ccm7Nam1z8KcoCqPdI7ecm1N33EzAetWahvQWVqLZtaZQ+IDKX4IyA2o0gBzqIMkAagHQ==
+string_decoder@^1.1.1:
+  version "1.3.0"
+  resolved "http://bnpm.byted.org/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
+  integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
   dependencies:
-    asn1 "~0.2.3"
-    assert-plus "^1.0.0"
-    bcrypt-pbkdf "^1.0.0"
-    dashdash "^1.12.0"
-    ecc-jsbn "~0.1.1"
-    getpass "^0.1.1"
-    jsbn "~0.1.0"
-    safer-buffer "^2.0.2"
-    tweetnacl "~0.14.0"
+    safe-buffer "~5.2.0"
 
-stream-to-buffer@^0.1.0:
-  version "0.1.0"
-  resolved "http://bnpm.byted.org/stream-to-buffer/-/stream-to-buffer-0.1.0.tgz#26799d903ab2025c9bd550ac47171b00f8dd80a9"
-  integrity sha512-Da4WoKaZyu3nf+bIdIifh7IPkFjARBnBK+pYqn0EUJqksjV9afojjaCCHUemH30Jmu7T2qcKvlZm2ykN38uzaw==
+strtok3@^6.2.4:
+  version "6.3.0"
+  resolved "http://bnpm.byted.org/strtok3/-/strtok3-6.3.0.tgz#358b80ffe6d5d5620e19a073aa78ce947a90f9a0"
+  integrity sha512-fZtbhtvI9I48xDSywd/somNqgUHl2L2cstmXCCif0itOf96jeW18MBSyrLuNicYQVkvpOxkZtkzujiTJ9LW5Jw==
   dependencies:
-    stream-to "~0.2.0"
+    "@tokenizer/token" "^0.3.0"
+    peek-readable "^4.1.0"
 
-stream-to@~0.2.0:
-  version "0.2.2"
-  resolved "http://bnpm.byted.org/stream-to/-/stream-to-0.2.2.tgz#84306098d85fdb990b9fa300b1b3ccf55e8ef01d"
-  integrity sha512-Kg1BSDTwgGiVMtTCJNlo7kk/xzL33ZuZveEBRt6rXw+f1WLK/8kmz2NVCT/Qnv0JkV85JOHcLhD82mnXsR3kPw==
+timm@^1.6.1:
+  version "1.7.1"
+  resolved "http://bnpm.byted.org/timm/-/timm-1.7.1.tgz#96bab60c7d45b5a10a8a4d0f0117c6b7e5aff76f"
+  integrity sha512-IjZc9KIotudix8bMaBW6QvMuq64BrJWFs1+4V0lXwWGQZwH+LnX87doAYhem4caOEusRP9/g6jVDQmZ8XOk1nw==
 
 tinify@^1.5.0:
   version "1.7.1"
@@ -640,63 +708,58 @@ tinify@^1.5.0:
     promise-nodeify ">= 0.1"
     proxying-agent ">= 2.1"
 
-tinycolor2@^1.1.2:
+tinycolor2@^1.6.0:
   version "1.6.0"
   resolved "http://bnpm.byted.org/tinycolor2/-/tinycolor2-1.6.0.tgz#f98007460169b0263b97072c5ae92484ce02d09e"
   integrity sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==
 
-tough-cookie@~2.5.0:
-  version "2.5.0"
-  resolved "http://bnpm.byted.org/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
-  integrity sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==
+token-types@^4.1.1:
+  version "4.2.1"
+  resolved "http://bnpm.byted.org/token-types/-/token-types-4.2.1.tgz#0f897f03665846982806e138977dbe72d44df753"
+  integrity sha512-6udB24Q737UD/SDsKAHI9FCRP7Bqc9D/MQUV02ORQg5iskjtLJlZJNdN4kKtcdtwCeWIwIHDGaUsTsCCAa8sFQ==
   dependencies:
-    psl "^1.1.28"
-    punycode "^2.1.1"
+    "@tokenizer/token" "^0.3.0"
+    ieee754 "^1.2.1"
 
-tunnel-agent@^0.6.0:
-  version "0.6.0"
-  resolved "http://bnpm.byted.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
-  integrity sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==
-  dependencies:
-    safe-buffer "^5.0.1"
-
-tweetnacl@^0.14.3, tweetnacl@~0.14.0:
-  version "0.14.5"
-  resolved "http://bnpm.byted.org/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
-  integrity sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "http://bnpm.byted.org/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
 typescript@^5.1.6:
   version "5.1.6"
   resolved "http://bnpm.byted.org/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
   integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
-uri-js@^4.2.2:
-  version "4.4.1"
-  resolved "http://bnpm.byted.org/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
-  integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
+utif2@^4.0.1:
+  version "4.1.0"
+  resolved "http://bnpm.byted.org/utif2/-/utif2-4.1.0.tgz#e768d37bd619b995d56d9780b5d2b4611a3d932b"
+  integrity sha512-+oknB9FHrJ7oW7A2WZYajOcv4FcDR4CfoGB0dPNfxbi4GO05RRnFmt5oa23+9w32EanrYcSJWspUiJkLMs+37w==
   dependencies:
-    punycode "^2.1.0"
+    pako "^1.0.11"
 
-url-regex@^3.0.0:
-  version "3.2.0"
-  resolved "http://bnpm.byted.org/url-regex/-/url-regex-3.2.0.tgz#dbad1e0c9e29e105dd0b1f09f6862f7fdb482724"
-  integrity sha512-dQ9cJzMou5OKr6ZzfvwJkCq3rC72PNXhqz0v3EIhF4a3Np+ujr100AhUx2cKx5ei3iymoJpJrPB3sVSEMdqAeg==
+util-deprecate@^1.0.1:
+  version "1.0.2"
+  resolved "http://bnpm.byted.org/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "http://bnpm.byted.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
+whatwg-fetch@^3.4.1:
+  version "3.6.2"
+  resolved "http://bnpm.byted.org/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
+  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "http://bnpm.byted.org/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
   dependencies:
-    ip-regex "^1.0.1"
-
-uuid@^3.3.2:
-  version "3.4.0"
-  resolved "http://bnpm.byted.org/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
-  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-verror@1.10.0:
-  version "1.10.0"
-  resolved "http://bnpm.byted.org/verror/-/verror-1.10.0.tgz#3a105ca17053af55d6e270c1f8288682e18da400"
-  integrity sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==
-  dependencies:
-    assert-plus "^1.0.0"
-    core-util-is "1.0.2"
-    extsprintf "^1.2.0"
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 xhr@^2.0.1:
   version "2.6.0"

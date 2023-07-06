@@ -1,5 +1,5 @@
 import Jimp from 'jimp'
-import { TexturePackerOptions } from '..';
+import { TexturePackerOptions } from '../types';
 
 
 interface TextureRendererData {
@@ -109,7 +109,7 @@ class TextureRenderer {
       filter.apply(image);
 
       if (options.scale && options.scale !== 1) {
-        let scaleMethod = Jimp.RESIZE_BILINEAR;
+        let scaleMethod: string = Jimp.RESIZE_BILINEAR;
 
         if (options.scaleMethod === "NEAREST_NEIGHBOR") scaleMethod = Jimp.RESIZE_NEAREST_NEIGHBOR;
         // @ts-ignore

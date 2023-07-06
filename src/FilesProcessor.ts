@@ -3,7 +3,7 @@ import PackProcessor from "./PackProcessor";
 import TextureRenderer from "./utils/TextureRenderer";
 // import tinify from "tinify";
 import { startExporter } from "./exporters";
-import { PackerExporter, TexturePackerOptions } from ".";
+import { PackerExporter, TexturePackerOptions } from "./types";
 
 export interface ResultItem {
   data: any;

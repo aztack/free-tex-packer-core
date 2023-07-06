@@ -1,4 +1,4 @@
-import { TexturePackerOptions } from ".";
+import { TexturePackerOptions } from "./types";
 
 import MaxRectsBinPack from './packers/MaxRectsBin';
 import OptimalPacker from './packers/OptimalPacker';

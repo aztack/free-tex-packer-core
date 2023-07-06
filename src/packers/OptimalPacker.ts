@@ -1,11 +1,8 @@
+import { OptimalPackerMethod } from "../types";
 import Packer from "./Packer";
 
-export enum OptimalPackerMethod {
-  AUTOMATIC = "Automatic",
-}
-
 const METHOD = {
-  Automatic: "Automatic",
+  Automatic: OptimalPackerMethod.AUTOMATIC,
 };
 
 export default class OptimalPacker extends Packer {

@@ -1,18 +1,6 @@
 import Packer from "./Packer";
 import Rect from "../math/Rect";
-
-/**
-* MaxRectsBin packer method
-*
-* @see TexturePackerOptions.packerMethod
-*/
-export enum MaxRectsBinMethod {
-  BEST_SHORT_SIDE_FIT = 'BestShortSideFit',
-  BEST_LONG_SIDE_FIT = 'BestLongSideFit',
-  BEST_AREA_FIT = 'BestAreaFit',
-  BOTTOM_LEFT_RULE = 'BottomLeftRule',
-  CONTACT_POINT_RULE = 'ContactPointRule',
-}
+import { MaxRectsBinMethod } from "../types";
 
 const METHOD = {
   BestShortSideFit: MaxRectsBinMethod.BEST_SHORT_SIDE_FIT,

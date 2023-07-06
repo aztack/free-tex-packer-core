@@ -1,19 +1,6 @@
 import { MaxRectsPacker as MaxRectsPackerEngine, PACKING_LOGIC } from "maxrects-packer";
 import Packer from "./Packer";
-
-/**
- * MaxRectsPacker packer method
- *
- * @see TexturePackerOptions.packerMethod
- */
-export enum MaxRectsPackerMethod {
-  SMART = 'Smart',
-  SQUARE = 'Square',
-  SMART_SQUARE = 'SmartSquare',
-  SMART_AREA = 'SmartArea',
-  SQUARE_AREA = 'SquareArea',
-  SMART_SQUARE_AREA = 'SmartSquareArea'
-}
+import { MaxRectsPackerMethod } from "../types";
 
 const METHOD = {
   Smart: MaxRectsPackerMethod.SMART,
