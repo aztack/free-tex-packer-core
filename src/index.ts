@@ -1,10 +1,11 @@
-import { MaxRectsBinMethod, MaxRectsPackerMethod, PackerMethods, getPackerByType } from "./packers";
+import { PackerMethods, getPackerByType } from "./packers";
 import { getExporterByType } from "./exporters";
 import { getFilterByType } from "./filters";
 import FilesProcessor, { ResultFile } from "./FilesProcessor";
 import Jimp from "jimp";
 import { BitmapFilterType, PackerExporterType, PackerType, ScaleMethod, TextureFormat, TexturePackerOptions, TrimMode } from "./types";
 export * from './packers';
+export * from './types';
 
 function getErrorDescription(txt) {
   return "@sar-creator/tex-packer" + ": " + txt;
