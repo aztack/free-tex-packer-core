@@ -1,22 +1,49 @@
 const fs = require('fs');
 const { pack } = require('../../dist/index.js');
-console.log(pack)
-const $path = require('path');
-const images = ['sar.png', 'igloo-tools.png', 'igloo-picture-books.jpeg', 'gameplus.png'];
+const path = require('path');
+const { images, pac } = scanFolder(path.resolve(__dirname, '../images/sheep'));
+const options = JSON.parse(fs.readFileSync(path.resolve(__dirname, pac)).toString('utf-8'));
 
-pack(images.map(name => {
-  const path = `../images/logos/${name}`;
-  return { path, contents: fs.readFileSync($path.resolve(__dirname, path)) }
+pack(images.map(_path => {
+  return { path: _path, contents: fs.readFileSync(path.resolve(__dirname, _path)) }
 }), {
   textureName: 'output',
-  exporter: 'COCOS2D'
+  exporter: 'Cocos2D',
+  ...options
 }, (files, error) => {
   if (error) {
     console.error('Packaging failed', error);
   } else {
     for (let item of files) {
       console.log(`Saving ${item.name}`);
-      fs.writeFileSync($path.resolve(__dirname, item.name), item.buffer);
+      fs.writeFileSync(path.resolve(__dirname, item.name), item.buffer);
     }
   }
 });
+
+function scanFolder(folderPath) {
+  const fileNames = fs.readdirSync(folderPath);
+  const images = [];
+  let pac = '';
+
+  fileNames.forEach((fileName) => {
+    const filePath = path.join(folderPath, fileName);
+    const fileStat = fs.statSync(filePath);
+
+    if (fileStat.isFile()) {
+      if (path.extname(filePath) === '.png') {
+        images.push(filePath);
+      } else if (path.extname(filePath) === '.pac') {
+        pac = filePath;
+      }
+    } else if (fileStat.isDirectory()) {
+      const subFolderPaths = scanFolder(filePath);
+      images.push(...subFolderPaths);
+    }
+  });
+
+  return {
+    images,
+    pac
+  };
+}
