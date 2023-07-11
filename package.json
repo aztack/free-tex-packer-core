@@ -10,7 +10,8 @@
     "build": "tsc && yarn esbuild && yarn copy-templates",
     "esbuild": "esbuild src/index.ts --bundle --tsconfig=tsconfig.json --platform=node --outfile=dist/index.js",
     "copy-templates": "cp src/exporters/*.mst esm/exporters/ && cp src/exporters/*.mst dist/exporters/",
-    "example:basic": "node examples/basic/index.js"
+    "example:basic": "node examples/basic/index.js",
+    "prepublishOnly": "yarn build"
   },
   "keywords": [
     "texture",
