@@ -5,7 +5,7 @@
   "width": 1024,
   "height": 1024,
   "powerOfTwo": false,
-  "padding": 0,
+  "padding": 2,
   "extrude": 0,
   "allowRotation": true,
   "allowTrim": true,

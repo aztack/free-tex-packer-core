@@ -5,7 +5,7 @@
   "description": "Free texture packer core",
   "main": "dist/index.js",
   "module": "esm/index.js",
-  "types": "src/index.d.ts",
+  "types": "esm/index.d.ts",
   "scripts": {
     "build": "tsc && yarn esbuild && yarn copy-templates",
     "esbuild": "esbuild src/index.ts --bundle --tsconfig=tsconfig.json --platform=node --outfile=dist/index.js",
@@ -40,11 +40,10 @@
     "jimp": "0.22.8",
     "maxrects-packer": "^2.5.0",
     "mustache": "^2.3.0",
-    "tinify": "^1.5.0"
-  },
-  "devDependencies": {
     "@types/node": "^13.1.0",
     "esbuild": "^0.18.11",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
   }
 }

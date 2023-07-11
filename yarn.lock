@@ -639,16 +639,6 @@ process@^0.11.10:
   resolved "http://bnpm.byted.org/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-"promise-nodeify@>= 0.1":
-  version "3.0.1"
-  resolved "http://bnpm.byted.org/promise-nodeify/-/promise-nodeify-3.0.1.tgz#f0f5d9720ee9ec71dd2bfa92667be504c10229c2"
-  integrity sha512-ghsSuzZXJX8iO7WVec2z7GI+Xk/EyiD+JZK7AZKhUqYfpLa/Zs4ylUD+CwwnKlG6G3HnkUPMAi6PO7zeqGKssg==
-
-"proxying-agent@>= 2.1":
-  version "2.4.0"
-  resolved "http://bnpm.byted.org/proxying-agent/-/proxying-agent-2.4.0.tgz#6796549fc46bf3423554440f64a4449220f9014d"
-  integrity sha512-b9vDqIcViJZVsWPpQlp9Py74u+Wqd0a+kMkkg7zX58mwNtrNbOChNlRTM7lUrlpiwNzyJCV8+5D8rnZYLDFh7Q==
-
 readable-stream@^3.6.0:
   version "3.6.2"
   resolved "http://bnpm.byted.org/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
@@ -699,14 +689,6 @@ timm@^1.6.1:
   version "1.7.1"
   resolved "http://bnpm.byted.org/timm/-/timm-1.7.1.tgz#96bab60c7d45b5a10a8a4d0f0117c6b7e5aff76f"
   integrity sha512-IjZc9KIotudix8bMaBW6QvMuq64BrJWFs1+4V0lXwWGQZwH+LnX87doAYhem4caOEusRP9/g6jVDQmZ8XOk1nw==
-
-tinify@^1.5.0:
-  version "1.7.1"
-  resolved "http://bnpm.byted.org/tinify/-/tinify-1.7.1.tgz#657be3759f3fd2f61dd089f44f29a6c6f0b52203"
-  integrity sha512-IbZwiVG0iN/BwZB0XTA45uNyv3DxDByL9TK0jI++hyWtnV68BgNKl0r+iNLsIEDasN3IntHaeaQbiVfaQVnLdQ==
-  dependencies:
-    promise-nodeify ">= 0.1"
-    proxying-agent ">= 2.1"
 
 tinycolor2@^1.6.0:
   version "1.6.0"

@@ -7,7 +7,7 @@ import wax from "@jvitela/mustache-wax";
 
 const appInfo = {
 	displayName: 'SAR Creator Texture Packer',
-	version: '0.3.4',
+	version: '0.3.5',
 	url: ''
 }
 
