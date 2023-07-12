@@ -1,5 +1,3 @@
-import { PackerMethods } from "./packers";
-
 /**
  * Texture packer uses {@link http://mustache.github.io/ | mustache} template engine.
  * Look at documentation how to create custom exporter:
@@ -107,6 +105,8 @@ export enum MaxRectsPackerMethod {
 export enum OptimalPackerMethod {
   AUTOMATIC = "Automatic",
 }
+
+export type PackerMethods = MaxRectsBinMethod | MaxRectsPackerMethod | OptimalPackerMethod;
 
 /**
  * Packer exporter type

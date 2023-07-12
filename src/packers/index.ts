@@ -1,4 +1,3 @@
-import { MaxRectsBinMethod, MaxRectsPackerMethod, OptimalPackerMethod } from "../types";
 import MaxRectsBin from "./MaxRectsBin";
 import MaxRectsPacker from "./MaxRectsPacker";
 import OptimalPacker from "./OptimalPacker";
@@ -6,8 +5,6 @@ import OptimalPacker from "./OptimalPacker";
 export { MaxRectsBinMethod } from "../types";
 export { MaxRectsPackerMethod } from "../types";
 export { OptimalPackerMethod } from "../types";
-
-export type PackerMethods = MaxRectsBinMethod | MaxRectsPackerMethod | OptimalPackerMethod;
 
 export const list = [
     MaxRectsBin,

@@ -1,9 +1,9 @@
-import { PackerMethods, getPackerByType } from "./packers";
+import { getPackerByType } from "./packers";
 import { getExporterByType } from "./exporters";
 import { getFilterByType } from "./filters";
 import FilesProcessor, { ResultFile } from "./FilesProcessor";
 import Jimp from "jimp";
-import { BitmapFilterType, PackerExporterType, PackerType, ScaleMethod, TextureFormat, TexturePackerOptions, TrimMode } from "./types";
+import { BitmapFilterType, PackerExporterType, PackerMethods, PackerType, ScaleMethod, TextureFormat, TexturePackerOptions, TrimMode } from "./types";
 export * from './packers';
 export * from './types';
 
