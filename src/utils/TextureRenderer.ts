@@ -140,7 +140,14 @@ class TextureRenderer {
       if (item.rotated) {
         // @ts-ignore
         img = img.clone();
-        img.rotate(90);
+        // https://github.com/odrick/free-tex-packer-core/issues/45
+        // https://github.com/jimp-dev/jimp/tree/main/packages/plugin-rotate
+        // jimp.rotate(deg): deg the number of degrees to rotate the image by, counter-clockwise
+        let dir = options.rotationDirection ?? 'cw';
+        if (typeof options.exporter === 'object' && options.exporter['rotationDirection']) {
+          dir = options.exporter['rotationDirection'];
+        }
+        img.rotate(dir === 'cw' ? -90 : 90);
 
         sx = item.sourceSize.h - item.spriteSourceSize.h - item.spriteSourceSize.y;
         sy = item.spriteSourceSize.x;

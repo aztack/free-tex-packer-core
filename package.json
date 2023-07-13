@@ -1,7 +1,7 @@
 {
   "name": "@sar-creator/tex-packer",
   "displayName": "SAR Creator Texture Packer",
-  "version": "0.3.6-alpha.2",
+  "version": "0.3.6-alpha.3",
   "description": "Free texture packer core",
   "main": "dist/index.js",
   "module": "esm/index.js",

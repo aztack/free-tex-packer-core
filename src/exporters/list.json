@@ -103,6 +103,7 @@
     "description": "cocos2d format",
     "allowTrim": true,
     "allowRotation": true,
+    "rotationDirection": "cw",
     "template": "Cocos2d.mst",
     "fileExt": "plist",
     "predefined": true

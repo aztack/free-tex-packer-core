@@ -308,6 +308,15 @@ export interface TexturePackerOptions {
   appInfo?: any;
   suffix?: string;
   suffixInitialValue?: number;
+
+  /**
+   * The direction in which a sprite is rotated
+   * cw:  clockwise rotation
+   * ccw: counterclockwise rotation
+   * The amount of rotation is always 90°
+   * @see https://www.codeandweb.com/texturepacker/documentation/custom-exporter
+   */
+  rotationDirection?: 'cw' | 'ccw';
 }
 
 export enum ScaleMethod {
